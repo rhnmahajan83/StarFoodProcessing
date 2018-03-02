@@ -47,7 +47,7 @@ p a:hover {
 #header div a#logo {
 	display:block;
 	float:left;
-	margin:25px 0 0;
+	margin:15px 0 0;
 }
 #header div ul {
 	float:right;
@@ -63,21 +63,25 @@ p a:hover {
 	width:110px;
 }
 #header div ul li a {
-	color:#787b66;
+	color:#000000;
 	display:block;
 	height:130px;
+	font-weight:400;
 	letter-spacing:.075em;
 	line-height:150px;
 	text-align:center;
 	text-decoration:none;
-	text-shadow:0 1px 0 #fff;
 	width:110px;
 }
 #header div ul li.selected a {
 	background:url(../images/bg-nav-selected.png) repeat-x;
 }
-#header div ul li.selected a, #header div ul li a:hover {
-	color:#1bb5ac;
+#header div ul li a:hover {
+	color:#ff0000;
+}
+#header div ul li.selected  {
+	color:#000000;
+	text-shadow:0 1px 0 rgb(194, 5, 5);
 }
 /*------------------------- Body ------------------------*/
 #body {
@@ -104,7 +108,7 @@ p a:hover {
 	margin:0 0 0 28px;
 }
 #body.home .blog div h3 {
-	color:#e49e06;
+	color:#fe5000;
 	font-family:anticregular;
 	font-size:20px;
 	font-weight:400;
@@ -195,7 +199,7 @@ p a:hover {
 	text-align:justify;
 }
 #body.contact h3 {
-	color:#e49e06;
+	color:#fe5000;
 	font-family:anticregular;
 	font-size:20px;
 	font-weight:400;
@@ -283,6 +287,7 @@ p a:hover {
 #body.blog > div:first-child > ul > li > div h3 {
 	color:#e49e06;
 	font-family:anticregular;
+
 	font-size:16px;
 	font-weight:400;
 	line-height:24px;
@@ -459,10 +464,10 @@ p a:hover {
 	width:940px;
 }
 #footer div p {
-	color:#5bdee6;
+	color:#ffffff;
 	display:block;
 	float:left;
-	margin:20px 0;
+	margin:50px 0 0;
 }
 #footer div .connect {
 	float:right;
@@ -512,7 +517,7 @@ input[type=number], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #cc1f27;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -525,11 +530,24 @@ input[type=submit]:hover {
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+	padding: 20px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	padding-right:15px;
+	padding-left:15px
 }
 
+.container h3 {
+	color:#cc1f27;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:400;
+	letter-spacing:.05em;
+	margin:11px 0 0;
+}
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
@@ -544,4 +562,29 @@ input[type=submit]:hover {
     display: table;
 	clear: both;
 }
-
+.size {
+  margin-right: 10px; 
+}
+.product-details{
+	margin-right: 100px; 
+}
+td {
+	font-size:12px;
+	line-height:24px;
+	letter-spacing:0.05em;
+	color:#6b6262;
+}
+.offer {
+	font-size:20px;
+	line-height:24px;
+	margin-top: 10px;
+	letter-spacing:0.05em;
+	color:#dd2b2b;
+}
+.price {
+	font-size:20px;	
+	line-height:24px;
+	margin-bottom: 15px;
+	letter-spacing:0.05em;
+	color:#5f5c5c;
+}
